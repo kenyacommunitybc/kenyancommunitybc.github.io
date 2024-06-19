@@ -31,8 +31,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Print NPM version
+        run: npm -v
       - name: NPM Install
         run: npm install
+      - name: NPM Clean
+        run: npm run clean
       - name: NPM Build
         run: npm run build
       - name: Setup Pages
