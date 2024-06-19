@@ -80,3 +80,16 @@ Start Bootstrap is based on the [Bootstrap](https://getbootstrap.com/) framework
 ## Copyright and License
 
 Copyright 2013-2023 Start Bootstrap LLC. Code released under the [MIT](https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE) license.
+
+
+## Important
+
+Make sure to remove exif information from images before commiting them:
+
+```
+fd -e jpg -e jpeg -e png -t file -a | \
+  while read FILENAME
+  do
+    exiftool -all= -overwrite_original_in_place "${FILENAME}"
+  done
+```
