@@ -8,10 +8,10 @@ html(lang='en')
         meta(name='description', content='')
         meta(name='author', content='')
 
-        title Agency - Start Bootstrap Theme
+        title KENBC
 
         // Favicon
-        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+        link(rel='icon', type='image/x-icon', href='assets/kenbc-favicon.png')
 
         // Font Awesome icons (free version)
         script(src='https://use.fontawesome.com/releases/v6.3.0/js/all.js', crossorigin='anonymous')
@@ -29,16 +29,16 @@ html(lang='en')
         nav#mainNav.navbar.navbar-expand-lg.navbar-dark.fixed-top
             .container
                 a.navbar-brand(href='#page-top')
-                    img(src='assets/img/navbar-logo.svg', alt='...')
+                    | KENBC
                 button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     | Menu
                     i.fas.fa-bars.ms-1
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.text-uppercase.ms-auto.py-4.py-lg-0
                         li.nav-item
-                            a.nav-link(href='#services') Services
+                            a.nav-link(href='#what-we-do') What We Do
                         li.nav-item
-                            a.nav-link(href='#portfolio') Portfolio
+                            a.nav-link(href='#events') Events
                         li.nav-item
                             a.nav-link(href='#about') About
                         li.nav-item
@@ -48,112 +48,148 @@ html(lang='en')
         // Masthead
         header.masthead
             .container
-                .masthead-subheading Welcome To Our Studio!
-                .masthead-heading.text-uppercase It's Nice To Meet You
-                a.btn.btn-primary.btn-xl.text-uppercase(href='#services') Tell Me More
+                .masthead-subheading Fostering common heritage and national identity
+                .masthead-heading.text-uppercase Kenyan Community in BC
+                // a.btn.btn-primary.btn-xl.text-uppercase(href='#what-we-do') Learn More
 
-        // Services
-        section#services.page-section
+        // What We Do
+        section#what-we-do.page-section
             .container
                 .text-center
-                    h2.section-heading.text-uppercase Services
-                    h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
+                    h2.section-heading.text-uppercase What We Do
+                    h3.section-subheading.text-muted Stronger Together
                 .row.text-center
                     .col-md-4
                         span.fa-stack.fa-4x
                             i.fas.fa-circle.fa-stack-2x.text-primary
-                            i.fas.fa-shopping-cart.fa-stack-1x.fa-inverse
-                        h4.my-3 E-Commerce
+                            i.fas.fa-users.fa-stack-1x.fa-inverse
+                        h4.my-3 Community
                         p.text-muted
-                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+                            | We are dedicated to fostering connections, building bridges, and creating a sense of belonging for all.
                     .col-md-4
                         span.fa-stack.fa-4x
                             i.fas.fa-circle.fa-stack-2x.text-primary
-                            i.fas.fa-laptop.fa-stack-1x.fa-inverse
-                        h4.my-3 Responsive Design
+                            i.fas.fa-handshake-angle.fa-stack-1x.fa-inverse
+                        h4.my-3 Volunteer
                         p.text-muted
-                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+                            | Our community seeks to develop the next generation of leaders. We provide multiple forums to give back and collaborate.
                     .col-md-4
                         span.fa-stack.fa-4x
                             i.fas.fa-circle.fa-stack-2x.text-primary
-                            i.fas.fa-lock.fa-stack-1x.fa-inverse
-                        h4.my-3 Web Security
+                            i.fas.fa-brain.fa-stack-1x.fa-inverse
+                        h4.my-3 Mental Health
                         p.text-muted
-                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+                            | We are dedicated to fostering connections, building bridges, and creating a sense of belonging for all.
+                .row.text-center
+                    .col-md-4
+                        span.fa-stack.fa-4x
+                            i.fas.fa-circle.fa-stack-2x.text-primary
+                            i.fas.fa-network-wired.fa-stack-1x.fa-inverse
+                        h4.my-3 Integration
+                        p.text-muted
+                            | We provide comprehensive resources and guidance to help newcomers navigate the new environment with confidence and dignity.
+                    .col-md-4
+                        span.fa-stack.fa-4x
+                            i.fas.fa-circle.fa-stack-2x.text-primary
+                            i.fas.fa-calendar.fa-stack-1x.fa-inverse
+                        h4.my-3 Events
+                        p.text-muted
+                            | Through events, programs, and outreach initiatives, we strive to unite members, sparking meaningful interactions and collaborations that strengthen our community.
 
-        // Portfolio Grid
-        section#portfolio.page-section.bg-light
+                    .col-md-4
+                        span.fa-stack.fa-4x
+                            i.fas.fa-circle.fa-stack-2x.text-primary
+                            i.fas.fa-hand-holding-heart.fa-stack-1x.fa-inverse
+                        h4.my-3 Benevolence
+                        p.text-muted
+                            | We support our members as they grieve lost loved ones. Our members mobilize to provide support and care for the bereaved.
+
+        // Events Grid
+        section#events.page-section.bg-light
             .container
                 .text-center
-                    h2.section-heading.text-uppercase Portfolio
-                    h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
+                    h2.section-heading.text-uppercase Events
+                    h3.section-subheading.text-muted Some of our past events.
                 .row
                     .col-lg-4.col-sm-6.mb-4
                         // Portfolio item 1
-                        .portfolio-item
-                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal1')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/1.jpg', alt='...')
-                            .portfolio-caption
-                                .portfolio-caption-heading Threads
-                                .portfolio-caption-subheading.text-muted Illustration
+                        .portfolio-item.h-100
+                            .d-flex.flex-column.justify-content-between.h-100
+                                a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal1')
+                                    .portfolio-hover
+                                        .portfolio-hover-content
+                                            i.fas.fa-plus.fa-3x
+                                    img.img-fluid(src='assets/img/events/2023-dec-kenyan-heritage-gala.jpg', alt='...')
+                                .portfolio-caption
+                                    .portfolio-caption-heading.py-2 Kenyan Heritage Gala
+                                    .portfolio-caption-subheading.text-muted.py-2 A celebration of Kenyan culture
                     .col-lg-4.col-sm-6.mb-4
                         // Portfolio item 2
-                        .portfolio-item
-                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal2')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/2.jpg', alt='...')
-                            .portfolio-caption
-                                .portfolio-caption-heading Explore
-                                .portfolio-caption-subheading.text-muted Graphic Design
+                        .portfolio-item.h-100
+                            .d-flex.flex-column.justify-content-between.h-100
+                                a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal2')
+                                    .portfolio-hover
+                                        .portfolio-hover-content
+                                            i.fas.fa-plus.fa-3x
+                                    img.img-fluid(src='assets/img/events/2023-may-mothers-day-celebration.jpg', alt='...')
+                                .portfolio-caption
+                                    .portfolio-caption-heading.py-2 Mothers' Day 2023
+                                    .portfolio-caption-subheading.text-muted.py-2 Appreciating mothers in our community
                     .col-lg-4.col-sm-6.mb-4
                         // Portfolio item 3
-                        .portfolio-item
-                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal3')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/3.jpg', alt='...')
-                            .portfolio-caption
-                                .portfolio-caption-heading Finish
-                                .portfolio-caption-subheading.text-muted Identity
+                        .portfolio-item.h-100
+                            .d-flex.flex-column.justify-content-between.h-100
+                                a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal3')
+                                    .portfolio-hover
+                                        .portfolio-hover-content
+                                            i.fas.fa-plus.fa-3x
+                                    img.img-fluid(src='assets/img/events/surrey-fusion-festival.jpg', alt='...')
+                                .portfolio-caption
+                                    .portfolio-caption-heading.py-2 Surrey Fusion Festival
+                                    .portfolio-caption-subheading.text-muted.py-2 We participate in multicultural events
                     .col-lg-4.col-sm-6.mb-4.mb-lg-0
                         // Portfolio item 4
-                        .portfolio-item
-                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal4')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/4.jpg', alt='...')
-                            .portfolio-caption
-                                .portfolio-caption-heading Lines
-                                .portfolio-caption-subheading.text-muted Branding
+                        .portfolio-item.h-100
+                            .d-flex.flex-column.justify-content-between.h-100
+                                a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal4')
+                                    .portfolio-hover
+                                        .portfolio-hover-content
+                                            i.fas.fa-plus.fa-3x
+                                    img.img-fluid(src='assets/img/events/2022-april-boniface-mwangi-event.jpg', alt='...')
+                                .portfolio-caption
+                                    .portfolio-caption-heading.py-2 Boniface Mwangi Talk
+                                    .portfolio-caption-subheading.text-muted.py-2 Inspiring talk by the "People's Watchman"
                     .col-lg-4.col-sm-6.mb-4.mb-sm-0
                         // Portfolio item 5
-                        .portfolio-item
-                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal5')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/5.jpg', alt='...')
-                            .portfolio-caption
-                                .portfolio-caption-heading Southwest
-                                .portfolio-caption-subheading.text-muted Website Design
+                        .portfolio-item.h-100
+                            .d-flex.flex-column.justify-content-between.h-100
+                                a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal5')
+                                    .portfolio-hover
+                                        .portfolio-hover-content
+                                            i.fas.fa-plus.fa-3x
+                                    img.img-fluid(src='assets/img/events/2022-mar-financial-literarcy-event.jpg', alt='...')
+                                .portfolio-caption
+                                    .portfolio-caption-heading.py-2 Financial Literacy Session
+                                    .portfolio-caption-subheading.text-muted.py-2 Teaching our community about personal finance
                     .col-lg-4.col-sm-6
                         // Portfolio item 6
-                        .portfolio-item
-                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal6')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/6.jpg', alt='...')
-                            .portfolio-caption
-                                .portfolio-caption-heading Window
-                                .portfolio-caption-subheading.text-muted Photography
+                        .portfolio-item.h-100
+                            .d-flex.flex-column.justify-content-between.h-100
+                                a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal6')
+                                    .portfolio-hover
+                                        .portfolio-hover-content
+                                            i.fas.fa-plus.fa-3x
+                                    img.img-fluid(src='assets/img/events/2021-oct-mental-health-and-wellness.jpg', alt='...')
+                                .portfolio-caption
+                                    .portfolio-caption-heading.py-2 Mental Health and Wellness
+                                    .portfolio-caption-subheading.text-muted.py-2 We have recurring series on mental health
+                .row
+                    .col-12.text-center
+                        .mt-5.pt-5
+                            a.btn.btn-primary.btn-xl.text-uppercase(href='https://www.instagram.com/kenyans_in_bc', target="_blank")
+                                | Learn about upcoming events
+                                i.fas.fa-brands.fa-instagram.ms-1
+
 
         // About
         section#about.page-section
@@ -256,136 +292,70 @@ html(lang='en')
                         p.large.text-muted
                             | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.
 
-        // Clients
+        // Partners
         div.py-5
             .container
                 .row.align-items-center
                     .col-md-3.col-sm-6.my-3
-                        a(href='#!')
-                            img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/microsoft.svg', alt='...', aria-label='Microsoft Logo')
+                        a(href='https://www.canada.ca/en.html', target="_blank")
+                            img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/partners/federal-government-of-canada-logo.svg', alt='...', aria-label='Microsoft Logo')
                     .col-md-3.col-sm-6.my-3
-                        a(href='#!')
-                            img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/google.svg', alt='...', aria-label='Google Logo')
+                        a(href='https://kenyahighcommission.ca', target="_blank")
+                            img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/partners/kenya-high-commission-to-canada.png', alt='...', aria-label='Google Logo')
                     .col-md-3.col-sm-6.my-3
-                        a(href='#!')
-                            img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/facebook.svg', alt='...', aria-label='Facebook Logo')
+                        a(href='https://www.welcomebc.ca/', target="_blank")
+                            img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/partners/government-of-bc-logo.png', alt='...', aria-label='Facebook Logo')
                     .col-md-3.col-sm-6.my-3
-                        a(href='#!')
-                            img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/ibm.svg', alt='...', aria-label='IBM Logo')
+                        a(href='https://www.kcacanada.org/', target="_blank")
+                            img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/partners/kenyan-canadian-association.jpeg', alt='...', aria-label='IBM Logo')
 
         // Contact
         section#contact.page-section
-            .container
-                .text-center
-                    h2.section-heading.text-uppercase Contact Us
-                    h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
+            .container.h-100
+                .d-flex.h-100.flex-column.justify-content-between.text-center.text-uppercase
+                    h2.section-heading Contact Us
+                    .section-subheading.text-white.display-6
+                        | Our Mailing Address
+                        br
+                        | 1234 Hornby Street
+                        br
+                        | Vancouver BC VANCVR
+                    .row
+                    .col-12.text-center
+                        .mt-5.pt-5
+                            a.btn.btn-primary.btn-xl.text-uppercase(href='mailto:info@kenyancommunitybc.org', target="_blank")
+                                | Email Us
+                                i.fas.fa-envelope
 
-                // * * * * * * * * * * * * * * *
-                // * * SB Forms Contact Form * *
-                // * * * * * * * * * * * * * * *
 
-                // This form is pre-integrated with SB Forms.
-                // To make this form functional, sign up at
-                // https://startbootstrap.com/solution/contact-forms
-                // to get an API token!
 
-                form#contactForm(data-sb-form-api-token='API_TOKEN')
-                    .row.align-items-stretch.mb-5
-                        .col-md-6
-                            .form-group
 
-                                // Name input
-                                input#name.form-control(
-                                    type='text',
-                                    placeholder='Your Name *',
-                                    data-sb-validations='required'
-                                )
-                                .invalid-feedback(data-sb-feedback='name:required')
-                                    | A name is required.
-
-                            .form-group
-
-                                // Email address input
-                                input#email.form-control(
-                                    type='email',
-                                    placeholder='Your Email *',
-                                    data-sb-validations='required,email'
-                                )
-                                .invalid-feedback(data-sb-feedback='email:required')
-                                    | An email is required.
-                                .invalid-feedback(data-sb-feedback='email:email')
-                                    | Email is not valid.
-
-                            .form-group.mb-md-0
-
-                                // Phone number input
-                                input#phone.form-control(
-                                    type='tel',
-                                    placeholder='Your Phone *',
-                                    data-sb-validations='required'
-                                )
-                                .invalid-feedback(data-sb-feedback='phone:required')
-                                    | A phone number is required.
-
-                        .col-md-6
-                            .form-group.form-group-textarea.mb-md-0
-
-                                // Message input
-                                textarea#message.form-control(
-                                    placeholder='Your Message *',
-                                    data-sb-validations='required'
-                                )
-                                .invalid-feedback(data-sb-feedback='message:required')
-                                    | A message is required.
-
-                    // Submit success message
-                    //
-                    // This is what your users will see when the form
-                    // has successfully submitted
-
-                    #submitSuccessMessage.d-none
-                        .text-center.text-white.mb-3
-                            .fw-bolder Form submission successful!
-                            | To activate this form, sign up at
-                            br
-                            a(href='https://startbootstrap.com/solution/contact-forms') https://startbootstrap.com/solution/contact-forms
-
-                    // Submit error message
-                    //
-                    // This is what your users will see when there is
-                    // an error submitting the form
-
-                    #submitErrorMessage.d-none
-                        .text-center.text-danger.mb-3 Error sending message!
-
-                    // Submit Button
-                    .text-center
-                        button#submitButton.btn.btn-primary.btn-xl.text-uppercase.disabled(type='submit') Send Message
 
         // Footer
         footer.footer.py-4
             .container
                 .row.align-items-center
                     .col-lg-4.text-lg-start
-                        | Copyright &copy; Your Website 2023
+                        | Copyright &copy; Kenyan Community BC 2024
                     .col-lg-4.my-3.my-lg-0
-                        a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Twitter')
+                        a.btn.btn-dark.btn-social.mx-2(href='https://twitter.com/kenyans_in_bc', aria-label='Twitter' target="_blank")
                             i.fab.fa-twitter
-                        a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Facebook')
+                        a.btn.btn-dark.btn-social.mx-2(href='https://www.facebook.com/groups/2368046867', aria-label='Facebook', target="_blank")
                             i.fab.fa-facebook-f
-                        a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='LinkedIn')
+                        a.btn.btn-dark.btn-social.mx-2(href='https://www.instagram.com/kenyans_in_bc', aria-label='Instagram', target="_blank")
                             i.fab.fa-linkedin-in
                     .col-lg-4.text-lg-end
-                        a.link-dark.text-decoration-none.me-3(href='#!') Privacy Policy
-                        a.link-dark.text-decoration-none(href='#!') Terms of Use
+                        | All rights reserved.
+                        // a.link-dark.text-decoration-none.me-3(href='#!') Privacy Policy
+                        // a.link-dark.text-decoration-none(href='#!') Terms of Use
 
         // Portfolio Modals
-        include includes/portfolio-modal-1
-        include includes/portfolio-modal-2
-        include includes/portfolio-modal-3
-        include includes/portfolio-modal-4
-        include includes/portfolio-modal-5
-        include includes/portfolio-modal-6
+        //- include includes/portfolio-modal-1
+        //- include includes/portfolio-modal-2
+        //- include includes/portfolio-modal-3
+        //- include includes/portfolio-modal-4
+        //- include includes/portfolio-modal-5
+        //- include includes/portfolio-modal-6
 
         // Bootstrap core JS
         script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
