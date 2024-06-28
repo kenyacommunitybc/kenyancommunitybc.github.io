@@ -35,7 +35,7 @@ jobs:
       - name: Print NPM version
         run: npm -v
       - name: NPM Install
-        run: npm install --no-package-lock 
+        run: npm install --verbose
       - name: NPM Clean
         run: npm run clean
       - name: NPM Build
